@@ -40,7 +40,8 @@ gem 'spring',        group: :development
 
 gem 'bundler'
 
-gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'activeadmin', github: 'activeadmin/activeadmin'
+gem 'flattened_active_admin'
 gem 'devise', github: 'plataformatec/devise'
 gem 'rails_config'
 gem 'tzinfo-data'
