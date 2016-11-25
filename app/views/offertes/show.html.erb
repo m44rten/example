@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Onderwerp:</strong>
+  <%= @offerte.onderwerp %>
+</p>
+
+<p>
+  <strong>Datum:</strong>
+  <%= @offerte.datum %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @offerte.status %>
+</p>
+
+<p>
+  <strong>Offerte nummer:</strong>
+  <%= @offerte.offerte_nummer %>
+</p>
+
+<%= link_to 'Edit', edit_offerte_path(@offerte) %> |
+<%= link_to 'Back', offertes_path %>
