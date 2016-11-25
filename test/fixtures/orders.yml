@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  naam: MyText
+  nummer: 1
+  prijs: 9.99
+  personen_id: 
+
+two:
+  naam: MyText
+  nummer: 1
+  prijs: 9.99
+  personen_id: 
