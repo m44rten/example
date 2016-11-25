@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :offerte_regels
+
   resources :prijs
 
   resources :orders

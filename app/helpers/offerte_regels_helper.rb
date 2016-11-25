@@ -1,0 +1,2 @@
+module OfferteRegelsHelper
+end

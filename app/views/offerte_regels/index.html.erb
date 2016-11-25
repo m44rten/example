@@ -1,0 +1,35 @@
+<h1>Listing offerte_regels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artikel</th>
+      <th>Omschrijving</th>
+      <th>Aantal</th>
+      <th>Prijs</th>
+      <th>Post</th>
+      <th>Offerte</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @offerte_regels.each do |offerte_regel| %>
+      <tr>
+        <td><%= offerte_regel.artikel %></td>
+        <td><%= offerte_regel.omschrijving %></td>
+        <td><%= offerte_regel.aantal %></td>
+        <td><%= offerte_regel.prijs %></td>
+        <td><%= offerte_regel.post %></td>
+        <td><%= offerte_regel.offerte %></td>
+        <td><%= link_to 'Show', offerte_regel %></td>
+        <td><%= link_to 'Edit', edit_offerte_regel_path(offerte_regel) %></td>
+        <td><%= link_to 'Destroy', offerte_regel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Offerte regel', new_offerte_regel_path %>

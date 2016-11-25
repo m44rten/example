@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Artikel:</strong>
+  <%= @offerte_regel.artikel %>
+</p>
+
+<p>
+  <strong>Omschrijving:</strong>
+  <%= @offerte_regel.omschrijving %>
+</p>
+
+<p>
+  <strong>Aantal:</strong>
+  <%= @offerte_regel.aantal %>
+</p>
+
+<p>
+  <strong>Prijs:</strong>
+  <%= @offerte_regel.prijs %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @offerte_regel.post %>
+</p>
+
+<p>
+  <strong>Offerte:</strong>
+  <%= @offerte_regel.offerte %>
+</p>
+
+<%= link_to 'Edit', edit_offerte_regel_path(@offerte_regel) %> |
+<%= link_to 'Back', offerte_regels_path %>
