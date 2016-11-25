@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  artikel: MyText
+  omschrijving: MyText
+  aantal: 1
+  prijs: MyText
+  post: MyText
+  offerte_id: 
+
+two:
+  artikel: MyText
+  omschrijving: MyText
+  aantal: 1
+  prijs: MyText
+  post: MyText
+  offerte_id: 
