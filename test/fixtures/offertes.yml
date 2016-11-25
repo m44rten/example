@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  onderwerp: MyText
+  datum: 2016-11-25 16:12:43
+  status: MyText
+  offerte_nummer: MyText
+
+two:
+  onderwerp: MyText
+  datum: 2016-11-25 16:12:43
+  status: MyText
+  offerte_nummer: MyText
