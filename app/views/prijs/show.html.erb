@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product nummer:</strong>
+  <%= @prij.product_nummer %>
+</p>
+
+<p>
+  <strong>Naam:</strong>
+  <%= @prij.naam %>
+</p>
+
+<%= link_to 'Edit', edit_prij_path(@prij) %> |
+<%= link_to 'Back', prijs_path %>

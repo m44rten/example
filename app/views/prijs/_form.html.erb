@@ -1,0 +1,25 @@
+<%= form_for(@prij) do |f| %>
+  <% if @prij.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@prij.errors.count, "error") %> prohibited this prij from being saved:</h2>
+
+      <ul>
+      <% @prij.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :product_nummer %><br>
+    <%= f.number_field :product_nummer %>
+  </div>
+  <div class="field">
+    <%= f.label :naam %><br>
+    <%= f.text_area :naam %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

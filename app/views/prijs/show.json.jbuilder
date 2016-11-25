@@ -1,0 +1,1 @@
+json.partial! "prijs/prij", prij: @prij

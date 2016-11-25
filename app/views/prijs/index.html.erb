@@ -1,0 +1,27 @@
+<h1>Listing prijs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product nummer</th>
+      <th>Naam</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prijs.each do |prij| %>
+      <tr>
+        <td><%= prij.product_nummer %></td>
+        <td><%= prij.naam %></td>
+        <td><%= link_to 'Show', prij %></td>
+        <td><%= link_to 'Edit', edit_prij_path(prij) %></td>
+        <td><%= link_to 'Destroy', prij, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prij', new_prij_path %>

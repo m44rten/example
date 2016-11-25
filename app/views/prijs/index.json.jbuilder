@@ -1,0 +1,1 @@
+json.array! @prijs, partial: 'prijs/prij', as: :prij

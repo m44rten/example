@@ -1,0 +1,2 @@
+module PrijsHelper
+end
