@@ -1,0 +1,57 @@
+<%= form_for(@personen) do |f| %>
+  <% if @personen.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@personen.errors.count, "error") %> prohibited this personen from being saved:</h2>
+
+      <ul>
+      <% @personen.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :voornaam %><br>
+    <%= f.text_area :voornaam %>
+  </div>
+  <div class="field">
+    <%= f.label :achternaam %><br>
+    <%= f.text_area :achternaam %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :telefoon %><br>
+    <%= f.text_area :telefoon %>
+  </div>
+  <div class="field">
+    <%= f.label :mobiel %><br>
+    <%= f.text_area :mobiel %>
+  </div>
+  <div class="field">
+    <%= f.label :tussenvoegsel %><br>
+    <%= f.text_area :tussenvoegsel %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_area :type %>
+  </div>
+  <div class="field">
+    <%= f.label :functie %><br>
+    <%= f.text_area :functie %>
+  </div>
+  <div class="field">
+    <%= f.label :afdeling %><br>
+    <%= f.text_area :afdeling %>
+  </div>
+  <div class="field">
+    <%= f.label :bedrijf_id %><br>
+    <%= f.text_field :bedrijf_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

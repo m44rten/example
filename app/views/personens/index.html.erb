@@ -1,0 +1,43 @@
+<h1>Listing personens</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Voornaam</th>
+      <th>Achternaam</th>
+      <th>Email</th>
+      <th>Telefoon</th>
+      <th>Mobiel</th>
+      <th>Tussenvoegsel</th>
+      <th>Type</th>
+      <th>Functie</th>
+      <th>Afdeling</th>
+      <th>Bedrijf</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personens.each do |personen| %>
+      <tr>
+        <td><%= personen.voornaam %></td>
+        <td><%= personen.achternaam %></td>
+        <td><%= personen.email %></td>
+        <td><%= personen.telefoon %></td>
+        <td><%= personen.mobiel %></td>
+        <td><%= personen.tussenvoegsel %></td>
+        <td><%= personen.type %></td>
+        <td><%= personen.functie %></td>
+        <td><%= personen.afdeling %></td>
+        <td><%= personen.bedrijf %></td>
+        <td><%= link_to 'Show', personen %></td>
+        <td><%= link_to 'Edit', edit_personen_path(personen) %></td>
+        <td><%= link_to 'Destroy', personen, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Personen', new_personen_path %>

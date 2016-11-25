@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Voornaam:</strong>
+  <%= @personen.voornaam %>
+</p>
+
+<p>
+  <strong>Achternaam:</strong>
+  <%= @personen.achternaam %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @personen.email %>
+</p>
+
+<p>
+  <strong>Telefoon:</strong>
+  <%= @personen.telefoon %>
+</p>
+
+<p>
+  <strong>Mobiel:</strong>
+  <%= @personen.mobiel %>
+</p>
+
+<p>
+  <strong>Tussenvoegsel:</strong>
+  <%= @personen.tussenvoegsel %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @personen.type %>
+</p>
+
+<p>
+  <strong>Functie:</strong>
+  <%= @personen.functie %>
+</p>
+
+<p>
+  <strong>Afdeling:</strong>
+  <%= @personen.afdeling %>
+</p>
+
+<p>
+  <strong>Bedrijf:</strong>
+  <%= @personen.bedrijf %>
+</p>
+
+<%= link_to 'Edit', edit_personen_path(@personen) %> |
+<%= link_to 'Back', personens_path %>

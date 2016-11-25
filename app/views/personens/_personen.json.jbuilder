@@ -1,0 +1,2 @@
+json.extract! personen, :id, :voornaam, :achternaam, :email, :telefoon, :mobiel, :tussenvoegsel, :type, :functie, :afdeling, :bedrijf_id, :created_at, :updated_at
+json.url personen_url(personen, format: :json)

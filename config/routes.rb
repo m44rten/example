@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :personens
+
   resources :bedrijfs
 
   resources :offertes
