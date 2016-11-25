@@ -1,0 +1,43 @@
+<h1>Listing bedrijfs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bedrijfs naam</th>
+      <th>Kvk</th>
+      <th>Email</th>
+      <th>Website</th>
+      <th>Straat</th>
+      <th>Nummer</th>
+      <th>Postcode</th>
+      <th>Land</th>
+      <th>Plaats</th>
+      <th>Prijs</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bedrijfs.each do |bedrijf| %>
+      <tr>
+        <td><%= bedrijf.bedrijfs_naam %></td>
+        <td><%= bedrijf.kvk %></td>
+        <td><%= bedrijf.email %></td>
+        <td><%= bedrijf.website %></td>
+        <td><%= bedrijf.straat %></td>
+        <td><%= bedrijf.nummer %></td>
+        <td><%= bedrijf.postcode %></td>
+        <td><%= bedrijf.land %></td>
+        <td><%= bedrijf.plaats %></td>
+        <td><%= bedrijf.prijs %></td>
+        <td><%= link_to 'Show', bedrijf %></td>
+        <td><%= link_to 'Edit', edit_bedrijf_path(bedrijf) %></td>
+        <td><%= link_to 'Destroy', bedrijf, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bedrijf', new_bedrijf_path %>

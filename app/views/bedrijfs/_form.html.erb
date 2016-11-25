@@ -1,0 +1,57 @@
+<%= form_for(@bedrijf) do |f| %>
+  <% if @bedrijf.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bedrijf.errors.count, "error") %> prohibited this bedrijf from being saved:</h2>
+
+      <ul>
+      <% @bedrijf.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bedrijfs_naam %><br>
+    <%= f.text_area :bedrijfs_naam %>
+  </div>
+  <div class="field">
+    <%= f.label :kvk %><br>
+    <%= f.text_area :kvk %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_area :email %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br>
+    <%= f.text_area :website %>
+  </div>
+  <div class="field">
+    <%= f.label :straat %><br>
+    <%= f.text_area :straat %>
+  </div>
+  <div class="field">
+    <%= f.label :nummer %><br>
+    <%= f.text_area :nummer %>
+  </div>
+  <div class="field">
+    <%= f.label :postcode %><br>
+    <%= f.text_area :postcode %>
+  </div>
+  <div class="field">
+    <%= f.label :land %><br>
+    <%= f.text_area :land %>
+  </div>
+  <div class="field">
+    <%= f.label :plaats %><br>
+    <%= f.text_area :plaats %>
+  </div>
+  <div class="field">
+    <%= f.label :prijs_id %><br>
+    <%= f.text_field :prijs_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

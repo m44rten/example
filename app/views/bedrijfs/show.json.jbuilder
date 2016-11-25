@@ -1,0 +1,1 @@
+json.partial! "bedrijfs/bedrijf", bedrijf: @bedrijf

@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bedrijfs naam:</strong>
+  <%= @bedrijf.bedrijfs_naam %>
+</p>
+
+<p>
+  <strong>Kvk:</strong>
+  <%= @bedrijf.kvk %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @bedrijf.email %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @bedrijf.website %>
+</p>
+
+<p>
+  <strong>Straat:</strong>
+  <%= @bedrijf.straat %>
+</p>
+
+<p>
+  <strong>Nummer:</strong>
+  <%= @bedrijf.nummer %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @bedrijf.postcode %>
+</p>
+
+<p>
+  <strong>Land:</strong>
+  <%= @bedrijf.land %>
+</p>
+
+<p>
+  <strong>Plaats:</strong>
+  <%= @bedrijf.plaats %>
+</p>
+
+<p>
+  <strong>Prijs:</strong>
+  <%= @bedrijf.prijs %>
+</p>
+
+<%= link_to 'Edit', edit_bedrijf_path(@bedrijf) %> |
+<%= link_to 'Back', bedrijfs_path %>
