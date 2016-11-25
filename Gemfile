@@ -39,6 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'bundler'
+gem 'rails_12factor', group: :production
 
 gem 'activeadmin', github: 'activeadmin/activeadmin'
 gem 'flattened_active_admin'
